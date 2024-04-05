@@ -1,5 +1,5 @@
 export async function getCharizard() {
-  const container = document.querySelector(".pokeContainer");
+  const container = document.querySelector(".charizardContainer");
   const response = await fetch(
     "https://api.pokemontcg.io/v2/cards?q=name:charizard",
     {
