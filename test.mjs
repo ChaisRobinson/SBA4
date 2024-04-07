@@ -37,7 +37,8 @@
     .then((response) => response.json())
     .then((data) => console.log(data));
 
-
+/* This code defines an asynchronous function getGengar that fetches data about Gengar Pokemon cards from an API,
+then extracts the image URLs from the fetched data, and appends the images to an HTML element with the class name gengarContainer*/
     export async function getGengar() {
       const container = document.querySelector(".gengarContainer");
       const response = await fetch(

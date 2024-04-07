@@ -1,3 +1,6 @@
+/* This code defines an asynchronous function getCharizard that fetches data about Charizard Pokemon cards from an API,
+then extracts the image URLs from the fetched data, and appends the images to an HTML element with the class name charizardContainer*/
+
 export async function getCharizard() {
   const container = document.querySelector(".charizardContainer");
   const response = await fetch(

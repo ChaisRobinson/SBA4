@@ -1,3 +1,7 @@
+
+/* This code defines an asynchronous function getMew that fetches data about Mew Pokemon cards from an API,
+ then extracts the image URLs from the fetched data, and appends the images to an HTML element with the class name mewContainer */
+
 export async function getMew() {
     const container = document.querySelector(".mewContainer");
     const response = await fetch("https://api.pokemontcg.io/v2/cards?q=name:mew", {
