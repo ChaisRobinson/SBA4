@@ -38,8 +38,8 @@
     .then((data) => console.log(data));
 
 
-    export async function getBase1() {
-      const container = document.querySelector(".base1Container");
+    export async function getGengar() {
+      const container = document.querySelector(".gengarContainer");
       const response = await fetch(
         "https://api.pokemontcg.io/v2/cards?q=name:gengar",
         {
